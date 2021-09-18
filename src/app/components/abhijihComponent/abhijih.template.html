@@ -1,0 +1,74 @@
+<div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxFill>
+  <div fxLayout="column wrap" fxFlex="100" fxLayoutGap="12px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="row wrap" class="padding" fxLayoutGap="12px" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="row wrap" fxLayoutGap="12px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/back.svg" class="abhijihIcon">
+          <div class="abhijihText">
+            Abhijith Motors Pvt.Ltd</div>
+        </div>
+      </div>
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="row wrap" fxLayoutGap="18px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div class="fontSize">
+            AREA NAME</div>
+          <div class="fontSize">
+            South-end Circle, Bangalore</div>
+          <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div class="fontSize">
+              DEALER CODE</div>
+            <div class="fontSize">
+              #225947</div>
+          </div>
+          <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div class="fontSize">
+              STATUS</div>
+            <div fxLayout="row wrap" fxLayoutGap="3px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+              <div class="greenCircle">
+              </div>
+              <div class="fontSize">
+                Active</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="borderBottom">
+    </div>
+    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column">
+        <table mat-table [dataSource]="netWorks" class="table-width-fix">
+          <tr mat-header-row *matHeaderRowDef="[&apos;code&apos;,&apos;name&apos;,&apos;zone&apos;,&apos;area&apos;,&apos;40168536-6ee2-8deb-0c45-3c7bf242dfe7&apos;]"></tr>
+          <tr mat-row *matRowDef="let row; columns: [&apos;code&apos;,&apos;name&apos;,&apos;zone&apos;,&apos;area&apos;,&apos;40168536-6ee2-8deb-0c45-3c7bf242dfe7&apos;];"></tr>
+
+          <ng-container matColumnDef="code">
+            <th mat-header-cell *matHeaderCellDef>DEALER CODE</th>
+            <td mat-cell *matCellDef="let table; let i = index;">{{table.code}}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>DEALER NAME</th>
+            <td mat-cell *matCellDef="let table; let i = index;">{{table.name}}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="zone">
+            <th mat-header-cell *matHeaderCellDef>ZONE</th>
+            <td mat-cell *matCellDef="let table; let i = index;">{{table.zone}}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="area">
+            <th mat-header-cell *matHeaderCellDef>AREA NAME</th>
+            <td mat-cell *matCellDef="let table; let i = index;">{{table.area}}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="40168536-6ee2-8deb-0c45-3c7bf242dfe7">
+            <th mat-header-cell *matHeaderCellDef>STATUS</th>
+            <td mat-cell *matCellDef="let table; let i = index;">
+              <div class="tableBorderRadius {{table.status}}">
+              </div>
+            </td>
+          </ng-container>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

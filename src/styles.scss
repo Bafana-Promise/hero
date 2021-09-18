@@ -1,0 +1,150 @@
+/*Importing default angular material css theme. */
+
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "nDefaults.scss";
+
+$lightGreyColor: #c0c1c5;
+
+.toolBarContainer{
+    height: 9vh;
+}
+.toolBarImg{
+    width: 190px;
+    height: 50px;
+}
+.lightGreyColor{
+    color: $lightGreyColor;
+}
+.toolBarInput{
+}
+.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding-bottom: 0em !important;
+}
+.mat-form-field-prefix .mat-icon, .mat-form-field-suffix .mat-icon {
+    color: #c0c1c5;
+}
+.mat-form-field-appearance-legacy .mat-form-field-label {
+    color: #c0c1c5 !important;
+}
+.mat-form-field-flex {
+    display: inline-flex;
+    align-items: end !important;
+    box-sizing: border-box;
+    width: 100%;
+}
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color: rgb(0 0 0 / 0%) !important;
+}
+.mat-form-field-infix {
+    padding: .5em 0;
+    border-top: 0em solid transparent !important;
+}
+.toolBarBorderRight{
+    border-right: 2px solid #d9d9e2;
+    height: 48px;
+}
+.sideNavContainer{
+    height: 91vh;   
+    background: #f7f9ff;
+}
+.mat-drawer-backdrop.mat-drawer-shown {
+    background-color: #f7f9ff !important;
+}
+.padding{
+    padding: 30px 0px 0px 0px;
+}
+.sideContainer{
+    width: 15%;
+    background-color: #192235;
+}
+.sideContainerImg{
+    width: 50px;
+    height: 50px;
+    padding-top: 28px;
+}
+.manisureshText{
+    font-family: sans-serif;
+    color: #637280;
+    font-size: 16px;
+}
+.darkGreyColor{
+    color: #637280;
+}
+.sideNavIcon{
+    width: 23px;
+    height: 25px;
+}
+.sideNavText{
+    font-size: 18px;
+    font-family: Poppins;
+    color: #637280;
+}
+.activeSideNavText{
+    font-size: 18px;
+    font-family: Poppins;
+    color: #ffffff;
+}
+.activeRouter{
+    background: red;
+    width: 87px;
+    height: 23px;
+    border-radius: 14px;
+    text-align: center;
+    color: white;
+    .draft{
+        position: relative;
+        top: 2px;
+    }
+
+}
+.networkContainer{
+    margin-right: 12px;
+    font-size: 24px;
+    font-family: sans-serif;
+    color: #303030;
+}
+.draft{
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #707070;
+}
+.borderBottom{
+    border-bottom: 2px solid #ecf1ff;
+}
+.greenColor{
+    background: #3acba0;
+}
+.orangeColor{
+    background: #ffab1e;
+}
+.redColor{
+    background: #ed1c24;
+}
+.tableBorderRadius{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.abhijihIcon{
+    width: 20px;
+    height: 20px;
+}
+.abhijihText{
+    font-family: sans-serif;
+    font-size: 17px;
+    color: #080808;
+}
+.greenCircle{
+    width: 10px;
+    height: 10px;
+    background-color: #3acba0;
+    border-radius: 50%;
+}
+.fontSize{
+    font-size: 12px;
+    color: #707070;
+    font-family: sans-serif;
+}
+.table-border-spacing{
+  border-spacing: 0 20px !important;
+}
