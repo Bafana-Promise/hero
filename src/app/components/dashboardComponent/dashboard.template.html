@@ -32,28 +32,28 @@
             <div fxLayout="column wrap" fxLayoutGap="12px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
               <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
                 <div fxLayout="row wrap" fxLayoutGap="18px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/speed.svg" class="sideNavIcon">
-                  <div class="sideNavText">
+                  <div *ngIf="!sideNavResized" class="sideNavText">
                     Dashboard</div>
                 </div>
               </div>
               <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
                 <div fxLayout="row wrap" fxLayoutGap="18px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/network.svg" class="sideNavIcon">
-                  <div class="activeSideNavText">
+                  <div *ngIf="!sideNavResized" class="activeSideNavText">
                     Networks</div>
                 </div>
               </div>
               <div fxLayout="column wrap" fxLayoutGap="12px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
-                <div class="darkGreyColor">
+                <div *ngIf="!sideNavResized" class="darkGreyColor">
                   All</div>
-                <div class="activeRouter darkGreyColor">
+                <div *ngIf="!sideNavResized" class="activeRouter darkGreyColor">
                   <span class="draft darkGreyColor cursor" routerLink="/dashboard/draft" routerLinkActive="active">Draft</span>
                 </div>
-                <div class="darkGreyColor">
+                <div *ngIf="!sideNavResized" class="darkGreyColor">
                   Submitted</div>
               </div>
               <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
                 <div fxLayout="row wrap" fxLayoutGap="18px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/settings.svg" style="color: #637280;" class="sideNavIcon">
-                  <div class="sideNavText">
+                  <div *ngIf="!sideNavResized" class="sideNavText">
                     Settings</div>
                 </div>
               </div>
