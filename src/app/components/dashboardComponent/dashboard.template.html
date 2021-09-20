@@ -4,7 +4,7 @@
       <div fxLayout="column wrap" fxFlex="95" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
         <div fxLayout="row wrap" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false">
           <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-            <div fxLayout="row wrap" fxLayoutGap="19px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/neutrinos.png" class="toolBarImg"><img imgSrc="Web/Icons/hamBurger.svg" (click)="sideNavToggle()" class="cursor">
+            <div fxLayout="row wrap" fxLayoutGap="19px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/neutrinos.png" *ngIf="!sideNavResized" class="toolBarImg"><img imgSrc="Web/Icons/favicon.ico.png" *ngIf="sideNavResized" [ngClass]="(sideNavResized == true) ? &apos;toolBarImgResized&apos; : &apos;&apos;" class="toolBarImg"><img imgSrc="Web/Icons/hamBurger.svg" (click)="sideNavToggle()" class="cursor">
               <mat-form-field class="toolBarInput" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
                 <input matInput placeholder="Search here" [required]="false">
                 <mat-icon matPrefix>search</mat-icon>
@@ -21,15 +21,15 @@
         </div>
       </div>
     </div>
-    <mat-sidenav-container class="sideNavContainer">
+    <mat-sidenav-container class="sideNavContainer" autosize="true">
       <mat-sidenav #sidenav #sideNav [ngClass]="(sideNavResized == true) ? &apos;side-nav-width-resized&apos; : &apos;&apos;" class="sideContainer" [mode]="&apos;side&apos;" [position] [opened]="true">
         <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
           <div fxLayout="column wrap" fxFlex="95" fxLayoutGap="16px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
             <div fxLayout="column wrap" fxLayoutGap="5px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/manisuresh.png" class="sideContainerImg">
-              <div class="manisureshText">
+              <div *ngIf="!sideNavResized" class="manisureshText">
                 Manisuresh</div>
             </div>
-            <div fxLayout="column wrap" fxLayoutGap="12px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="column wrap" fxLayoutGap="12px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
               <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
                 <div fxLayout="row wrap" fxLayoutGap="18px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/speed.svg" class="sideNavIcon">
                   <div *ngIf="!sideNavResized" class="sideNavText">

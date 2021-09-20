@@ -35,6 +35,7 @@ export class dashboardComponent extends NBaseComponent implements OnInit,AfterVi
     sideNavToggle(){
         // this.sideNav.toggle();   
         this.sideNavResized = !this.sideNavResized;
+        console.log(this.sideNavResized)
     }
     
 
