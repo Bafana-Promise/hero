@@ -4,7 +4,7 @@
       <div fxLayout="column wrap" fxFlex="95" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
         <div fxLayout="row wrap" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false">
           <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-            <div fxLayout="row wrap" fxLayoutGap="19px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/neutrinos.png" class="toolBarImg"><img imgSrc="Web/Icons/hamBurger.svg">
+            <div fxLayout="row wrap" fxLayoutGap="19px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/neutrinos.png" class="toolBarImg"><img imgSrc="Web/Icons/hamBurger.svg" (click)="sideNavToggle()" class="cursor">
               <mat-form-field class="toolBarInput" [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
                 <input matInput placeholder="Search here" [required]="false">
                 <mat-icon matPrefix>search</mat-icon>
@@ -22,7 +22,7 @@
       </div>
     </div>
     <mat-sidenav-container class="sideNavContainer">
-      <mat-sidenav #sidenav class="sideContainer" [mode]="&apos;side&apos;" [position] [opened]="true">
+      <mat-sidenav #sidenav #sideNav [ngClass]="(sideNavResized == true) ? &apos;side-nav-width-resized&apos; : &apos;&apos;" class="sideContainer" [mode]="&apos;side&apos;" [position] [opened]="true">
         <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
           <div fxLayout="column wrap" fxFlex="95" fxLayoutGap="16px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
             <div fxLayout="column wrap" fxLayoutGap="5px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/manisuresh.png" class="sideContainerImg">
@@ -46,7 +46,7 @@
                 <div class="darkGreyColor">
                   All</div>
                 <div class="activeRouter darkGreyColor">
-                  <span class="draft">Draft</span>
+                  <span class="draft darkGreyColor cursor" routerLink="/dashboard/draft" routerLinkActive="active">Draft</span>
                 </div>
                 <div class="darkGreyColor">
                   Submitted</div>

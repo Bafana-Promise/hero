@@ -1,0 +1,178 @@
+<div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxFill>
+    <div fxLayout="column wrap" fxFlex="100" fxLayoutGap="12px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="row wrap" class="padding" fxLayoutGap="12px" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="row wrap" fxLayoutGap="12px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/back.svg" class="abhijihIcon">
+            <div class="abhijihText">
+              ARD Service Survey</div>
+          </div>
+        </div>
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="row wrap" fxLayoutGap="18px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+            <div class="fontSize">
+              AREA NAME</div>
+            <div class="fontSize">
+              Abhijith Motors Pvt.Ltd</div>
+            <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div class="fontSize">
+                DEALER CODE</div>
+              <div class="fontSize">
+                #225947</div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+              <div class="fontSize">
+                Visit Date</div>
+              <div fxLayout="row wrap" fxLayoutGap="3px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                <div class="fontSize">
+                  13-03-2019</div>
+                <mat-icon class="dateIcon">calendar_today</mat-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="borderBottom">
+      </div>
+      <div fxLayout="row wrap" style="background: white;" class="serviceSurvyHeight" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <mat-card class="cardHeight">
+            <mat-card-content>
+              <div fxLayout="column wrap" fxLayoutGap="25px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div fxLayout="column wrap" fxLayoutGap="17px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <div fxLayout="row wrap" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false">
+                    <div class="serviceNumber">
+                      1</div>
+                    <div class="numberBorder serviceNumber">
+                      2<div class="redBorderBottom">
+                      </div>
+                    </div>
+                    <div class="serviceNumber">
+                      3</div>
+                    <div class="serviceNumber">
+                      4</div>
+                    <div class="serviceNumber">
+                      5</div>
+                  </div>
+                  <div class="serviceBorderBottom">
+                  </div>
+                </div>
+                <div fxLayout="column wrap" fxLayoutGap="30px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                  <div>
+                    INFRASTRUCTURE</div><img imgSrc="Web/Icons/market.png" class="marketContainer">
+                </div>
+                <div fxLayout="column wrap" fxLayoutGap="10px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                  <div class="subCat">
+                    SUB - CATEGORY</div>
+                  <div class="vehicle">
+                    Vehicle Receiving Area</div><img imgSrc="Web/Icons/dots.svg">
+                  <div fxLayout="row wrap" class="marginTop" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                    <div class="borderRed">
+                    </div>
+                    <div class="borderBlack">
+                    </div>
+                  </div>
+                </div>
+                <div fxLayout="column wrap" fxLayoutGap="27px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <div fxLayout="row wrap" fxLayoutGap="12px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/download.svg" class="download">
+                    <div class="fontSizeContainer">
+                      Save as Draft</div>
+                  </div>
+                  <div fxLayout="row wrap" fxLayoutGap="12px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/correct.svg" class="download">
+                    <div class="fontSizeContainer">
+                      Submit &amp; exit</div>
+                  </div>
+                </div>
+              </div>
+            </mat-card-content>
+
+            <mat-card-actions></mat-card-actions>
+          </mat-card>
+        </div>
+        <div fxLayout="column wrap" style=" " fxFlex="78.8" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column" class="myTable">
+            <table mat-table [dataSource]="plansRemarks" class="table-width-fix">
+              <tr mat-header-row *matHeaderRowDef="[&apos;parameter&apos;,&apos;eb82c107-ec90-ccb8-1086-f9792cbe41b7&apos;,&apos;actions&apos;,&apos;f72a5637-5d82-f4d8-31b4-d2b814c88d7c&apos;,&apos;469d3d63-3a6d-8790-21e9-a6b8f20aad5d&apos;]"></tr>
+              <tr mat-row *matRowDef="let row; columns: [&apos;parameter&apos;,&apos;eb82c107-ec90-ccb8-1086-f9792cbe41b7&apos;,&apos;actions&apos;,&apos;f72a5637-5d82-f4d8-31b4-d2b814c88d7c&apos;,&apos;469d3d63-3a6d-8790-21e9-a6b8f20aad5d&apos;];"></tr>
+
+              <ng-container matColumnDef="parameter">
+                <th mat-header-cell *matHeaderCellDef>PARAMETER</th>
+                <td mat-cell *matCellDef="let table; let i = index;" class="tableColumnWidth">{{table.parameter}}</td>
+              </ng-container>
+
+              <ng-container matColumnDef="eb82c107-ec90-ccb8-1086-f9792cbe41b7">
+                <th mat-header-cell *matHeaderCellDef>RESPONSE</th>
+                <td mat-cell *matCellDef="let table; let i = index;" class="tableColumnWidth">
+                  <div fxLayout="row wrap" fxLayoutGap="9px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+                    <div>
+                      {{table.no}}
+                    </div>
+                    <mat-slide-toggle [required]="false"> </mat-slide-toggle>
+                    <div>
+                      {{table.yes}}
+                    </div>
+                  </div>
+                </td>
+              </ng-container>
+
+              <ng-container matColumnDef="actions">
+                <th mat-header-cell *matHeaderCellDef>ACTION PLAN/REMARKS (TM)</th>
+                <td mat-cell *matCellDef="let table; let i = index;" class="tableColumnWidth">{{table.actions}}</td>
+              </ng-container>
+
+              <ng-container matColumnDef="f72a5637-5d82-f4d8-31b4-d2b814c88d7c">
+                <th mat-header-cell *matHeaderCellDef>TARGET DATE</th>
+                <td mat-cell *matCellDef="let table; let i = index;" class="tableColumnWidth">
+                  <mat-form-field [appearance]="&apos;legacy&apos;">
+                    <input matInput placeholder="Choose a Date" [matDatepicker]="picker" [required]="false" [disabled]="false">
+                    <mat-datepicker-toggle matSuffix [for]="picker" disabled="false"></mat-datepicker-toggle>
+                    <mat-datepicker #picker [disabled]="false"></mat-datepicker>
+
+                  </mat-form-field>
+                </td>
+              </ng-container>
+
+              <ng-container matColumnDef="469d3d63-3a6d-8790-21e9-a6b8f20aad5d">
+                <th mat-header-cell *matHeaderCellDef>DOCUMENTS</th>
+                <td mat-cell *matCellDef="let table; let i = index;" class="{{table.color}} tableColumnWidth">
+                  <mat-icon class="cursor {{table.color}}" (click)="openDialog()">backup</mat-icon>
+                </td>
+              </ng-container>
+            </table>
+          </div>
+
+          <div fxLayout="column" class="mySecondTable">
+            <table mat-table [dataSource]="tableleDat" class="table-width-fix">
+
+              <tr mat-row *matRowDef="let row; columns: [&apos;text&apos;,&apos;ace44fca-f46c-116f-7c2b-9e58407db07c&apos;];"></tr>
+
+              <ng-container matColumnDef="text">
+                <th mat-header-cell *matHeaderCellDef></th>
+                <td mat-cell *matCellDef="let table; let i = index;" class="{{table.color}}">{{table.text}}</td>
+              </ng-container>
+
+              <ng-container matColumnDef="ace44fca-f46c-116f-7c2b-9e58407db07c">
+                <th mat-header-cell *matHeaderCellDef></th>
+                <td mat-cell *matCellDef="let table; let i = index;">
+                  <div fxLayout="column wrap" fxLayoutGap="5px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                    <div class="{{table.color}} {{table.colorGrey}} {{table.fontSize}} tableTextpadding">
+                      {{table.subpara}}
+                    </div>
+                    <div class="{{table.color}} tableTextpadding">
+                      {{table.para}}
+                    </div>
+                  </div>
+                </td>
+              </ng-container>
+            </table>
+          </div>
+          <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="column wrap" fxFlex="95" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="row wrap" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false"><button mat-raised-button class="buttonContainer">Previos</button><button mat-raised-button class="buttonContainer" color="warn">Next</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

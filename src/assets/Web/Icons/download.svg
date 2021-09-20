@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="51.689" height="51.69" viewBox="0 0 51.689 51.69">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ed1c24;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_1606" data-name="Group 1606" transform="translate(51.691) rotate(90)">
+    <ellipse id="Ellipse_30" data-name="Ellipse 30" class="cls-1" cx="25.845" cy="25.845" rx="25.845" ry="25.845"/>
+    <g id="baseline-save_alt-24px" transform="translate(11.18 40.503) rotate(-90)">
+      <path id="Path_1144" data-name="Path 1144" class="cls-2" d="M18.406,10.353v8.052H2.3V10.353H0v8.052a2.307,2.307,0,0,0,2.3,2.3h16.1a2.307,2.307,0,0,0,2.3-2.3V10.353Zm-6.9.771,2.979-2.968L16.1,9.778,10.353,15.53,4.6,9.778,6.223,8.156,9.2,11.124V0h2.3Z" transform="translate(3.451 3.451)"/>
+      <path id="Path_1145" data-name="Path 1145" class="cls-3" d="M0,0H27.608V27.608H0Z"/>
+    </g>
+  </g>
+</svg>

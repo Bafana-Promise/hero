@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="91.277" height="91.276" viewBox="0 0 91.277 91.276">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ed1c24;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        filter: url(#Ellipse_30);
+      }
+    </style>
+    <filter id="Ellipse_30" x="0" y="0" width="91.277" height="91.276" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-color="#ed1c24" flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1599" data-name="Group 1599" transform="translate(22.5 19.5)">
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, -22.5, -19.5)">
+      <circle id="Ellipse_30-2" data-name="Ellipse 30" class="cls-1" cx="23.138" cy="23.138" r="23.138" transform="translate(22.5 19.5)"/>
+    </g>
+    <g id="facebook-placeholder-for-locate-places-on-maps" transform="translate(15.66 12.056)">
+      <path id="Facebook_Places" class="cls-2" d="M81.179,5.282a6.61,6.61,0,0,0-.342-.849A7.27,7.27,0,0,0,66.9,6.583v.906c0,.038.013.377.032.547.264,2.112,1.931,4.358,3.176,6.47,1.339,2.263,2.729,4.49,4.106,6.715.849-1.452,1.695-2.924,2.525-4.338.226-.415.489-.83.715-1.226.151-.264.439-.528.571-.773,1.339-2.452,3.495-4.923,3.495-7.356v-1A7.529,7.529,0,0,0,81.179,5.282Zm-7,4.546a2.6,2.6,0,0,1-2.484-1.773,2.46,2.46,0,0,1-.07-.661V6.809A2.457,2.457,0,0,1,74.256,4.4a2.671,2.671,0,0,1,2.676,2.717A2.74,2.74,0,0,1,74.174,9.828Z" transform="translate(-66.905)"/>
+    </g>
+  </g>
+</svg>

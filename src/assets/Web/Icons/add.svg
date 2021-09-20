@@ -1,0 +1,12 @@
+<svg id="rounded-add-button" xmlns="http://www.w3.org/2000/svg" width="21.989" height="21.989" viewBox="0 0 21.989 21.989">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ed1c24;
+      }
+    </style>
+  </defs>
+  <g id="add-circle-outline">
+    <path id="Path_1446" data-name="Path 1446" class="cls-1" d="M12.094,5.5H9.9V9.9H5.5v2.2H9.9v4.4h2.2v-4.4h4.4V9.9h-4.4ZM10.995,0A10.995,10.995,0,1,0,21.99,10.995,11.027,11.027,0,0,0,10.995,0Zm0,19.791a8.8,8.8,0,1,1,8.8-8.8A8.822,8.822,0,0,1,10.995,19.791Z"/>
+  </g>
+</svg>

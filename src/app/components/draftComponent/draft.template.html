@@ -8,29 +8,29 @@
     </div>
     <div class="borderBottom">
     </div>
-    <div fxLayout="column">
+    <div fxLayout="column" class="draftTable">
       <table mat-table [dataSource]="netWorks" class="table-width-fix">
         <tr mat-header-row *matHeaderRowDef="[&apos;code&apos;,&apos;name&apos;,&apos;zone&apos;,&apos;area&apos;,&apos;40168536-6ee2-8deb-0c45-3c7bf242dfe7&apos;]"></tr>
         <tr mat-row *matRowDef="let row; columns: [&apos;code&apos;,&apos;name&apos;,&apos;zone&apos;,&apos;area&apos;,&apos;40168536-6ee2-8deb-0c45-3c7bf242dfe7&apos;];"></tr>
 
         <ng-container matColumnDef="code">
           <th mat-header-cell *matHeaderCellDef>DEALER CODE</th>
-          <td mat-cell *matCellDef="let table; let i = index;">{{table.code}}</td>
+          <td mat-cell *matCellDef="let table; let i = index;"><span routerLink="/dashboard/abhijih">{{table.code}}</span></td>
         </ng-container>
 
         <ng-container matColumnDef="name">
           <th mat-header-cell *matHeaderCellDef>DEALER NAME</th>
-          <td mat-cell *matCellDef="let table; let i = index;">{{table.name}}</td>
+          <td mat-cell *matCellDef="let table; let i = index;"><span routerLink="/dashboard/abhijih">{{table.name}}</span></td>
         </ng-container>
 
         <ng-container matColumnDef="zone">
           <th mat-header-cell *matHeaderCellDef>ZONE</th>
-          <td mat-cell *matCellDef="let table; let i = index;">{{table.zone}}</td>
+          <td mat-cell *matCellDef="let table; let i = index;"><span routerLink="/dashboard/abhijih">{{table.zone}}</span></td>
         </ng-container>
 
         <ng-container matColumnDef="area">
           <th mat-header-cell *matHeaderCellDef>AREA NAME</th>
-          <td mat-cell *matCellDef="let table; let i = index;">{{table.area}}</td>
+          <td mat-cell *matCellDef="let table; let i = index;"><span routerLink="/dashboard/abhijih">{{table.area}}</span></td>
         </ng-container>
 
         <ng-container matColumnDef="40168536-6ee2-8deb-0c45-3c7bf242dfe7">

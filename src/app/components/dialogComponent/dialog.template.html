@@ -1,0 +1,26 @@
+<div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxFill>
+  <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <mat-card class="dialogCardHeight">
+      <mat-card-title>Upload Documents</mat-card-title>
+
+      <mat-card-content>
+        <div fxLayout="row wrap" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" fxFlex="88" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="row wrap" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false">
+              <div>
+                Upload a document</div>
+              <mat-icon>backup</mat-icon>
+            </div>
+            <div class="dialoBottomgBorder">
+            </div>
+          </div>
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><img imgSrc="Web/Icons/add.svg"></div>
+        </div>
+      </mat-card-content>
+
+      <mat-card-actions>
+        <div fxLayout="row wrap" class="btnDialogPosition" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-raised-button class="btnContainer" mat-dialog-close="mat-dialog-close">Close</button><button mat-raised-button class="btnContainer btnBackground" [mat-dialog-close]="value">Ok</button></div>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

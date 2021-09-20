@@ -15,6 +15,10 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-dialogComponent
+import { dialogComponent } from '../components/dialogComponent/dialog.component';
+//CORE_REFERENCE_IMPORT-serviceComponent
+import { serviceComponent } from '../components/serviceComponent/service.component';
 //CORE_REFERENCE_IMPORT-abhijihComponent
 import { abhijihComponent } from '../components/abhijihComponent/abhijih.component';
 //CORE_REFERENCE_IMPORT-draftComponent
@@ -48,6 +52,10 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-dialogComponent
+dialogComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-serviceComponent
+serviceComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-abhijihComponent
 abhijihComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-draftComponent
@@ -81,5 +89,5 @@ export const appProviders = [
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
 export const appRoutes = [{path: 'dashboard', component: dashboardComponent,
-children: [{path: 'draft', component: draftComponent},{path: 'abhijih', component: abhijihComponent}]},{path: '', redirectTo: 'dashboard', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+children: [{path: 'draft', component: draftComponent},{path: 'abhijih', component: abhijihComponent},{path: 'service', component: serviceComponent},{path: 'dialog', component: dialogComponent}]},{path: '', redirectTo: 'dashboard', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

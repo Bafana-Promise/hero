@@ -15,6 +15,9 @@ $lightGreyColor: #c0c1c5;
 .lightGreyColor{
     color: $lightGreyColor;
 }
+.cursor{
+    cursor: pointer;
+}
 .toolBarInput{
 }
 .mat-form-field-appearance-legacy .mat-form-field-wrapper {
@@ -53,6 +56,12 @@ $lightGreyColor: #c0c1c5;
 .padding{
     padding: 30px 0px 0px 0px;
 }
+.side-nav-width-resized{
+    width: 100px !important;
+}
+.main-content-wrapper{
+    width: 90% !important;
+}
 .sideContainer{
     width: 15%;
     background-color: #192235;
@@ -84,13 +93,12 @@ $lightGreyColor: #c0c1c5;
     font-family: Poppins;
     color: #ffffff;
 }
-.activeRouter{
+.active{
     background: red;
-    width: 87px;
-    height: 23px;
+    padding: 5px 34px;
     border-radius: 14px;
     text-align: center;
-    color: white;
+    color: white !important;
     .draft{
         position: relative;
         top: 2px;
@@ -108,11 +116,55 @@ $lightGreyColor: #c0c1c5;
     font-family: sans-serif;
     color: #707070;
 }
+.transperantImg{
+    height: 2px;
+}
+.draftTable{
+    td.mat-cell {
+    // border-top: 1px solid black;        
+    // border-bottom: 2px solid black;
+  }
+
+   td.mat-cell:last-child {
+    
+    border-radius: 0px 10px 10px 0px;
+  }
+  .mat-header-row, [mat-header-row]{
+      background: #f7f9ff !important;
+  }
+  .mat-table thead, .mat-table tbody, .mat-table tfoot,  mat-row, mat-footer-row, [mat-row], [mat-footer-row], .mat-table-sticky {
+    background: white !important;
+    cursor: pointer;
+  }
+  .mat-row:hover{
+        background: black !important;
+        color: white !important;
+  }
+   td.mat-cell:hover{
+    color: white !important;
+  }
+
+  .mat-paginator-container {
+    background: #f7f9ff !important;
+}
+  td.mat-cell:first-child {
+    border-radius: 10px 0px 0px 10px;
+  }
+  table {
+  border-spacing: 0 7px !important;
+  }
+  .mat-table {
+    background: #f7f9ff !important;
+  }
+}
 .borderBottom{
     border-bottom: 2px solid #ecf1ff;
 }
 .greenColor{
     background: #3acba0;
+}
+.blackColor{
+    background: black;
 }
 .orangeColor{
     background: #ffab1e;
@@ -145,6 +197,168 @@ $lightGreyColor: #c0c1c5;
     color: #707070;
     font-family: sans-serif;
 }
-.table-border-spacing{
-  border-spacing: 0 20px !important;
+.backGroundColorRed{
+    background-color: red;
+    width: 42.8px;
+    height: 6.2px;
+    border-radius: 3px;
+}
+.backGroundColorBlack{
+    width: 42.8px;
+    height: 7.2px;
+    background-color: black;
+    border-radius: 3px;
+}
+.progress37red{
+    width: 19.9px;
+    height: 6.2px;
+    margin: 0 28.9px 0 0;
+    background-color: #ed1c24;
+    border-radius: 3px 0px 0px 3px;
+}
+.position{
+    position: relative;
+    bottom: 6.6px;
+}
+.textColor{
+    color: #707070;
+}
+
+.border{
+    border: 1px solid #ececec;
+}
+.mapContainer{
+    width: 431px;
+    height: 292px;
+}
+.mapText{
+    color: #080808;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.dottedBorder{
+    border-left: 1px dotted black;
+    height: 61px;
+}
+.locationImg{
+    width: 46.3px;
+    height: 46.3px;
+}
+.dateIcon{
+    font-size: 22px;
+    color: #929292;
+}
+.serviceBorderBottom{
+    border-bottom: 1px solid #ececec;
+}
+.serviceNumber{
+    color: #303030;
+}
+.numberBorder{
+    border-radius: 50%;
+    border: 2px solid #707070;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+}
+.marketContainer{
+    width: 234px;
+    height: 139.2px;
+}
+.subCat{
+    font-size: 10px;
+    color: rgb(193 193 193);
+    font-weight: 700;
+}
+.vehicle{
+    font-size: 18px;
+}
+.whiteColor{
+    color: white;
+}
+.borderRed{
+  width: 99px;
+  border: solid 1px #ed1c24;
+}
+.borderBlack{
+    width: 242px;
+    border: solid 1px #707070;
+}
+.redBorderBottom{
+    width: 20px;
+    border-bottom: 2px solid red;
+    position: relative;
+    top: 20px;
+}
+.marginTop{
+    margin-top: 12px;
+}
+.cardHeight{
+    height: 592px;
+}
+.fontSizeContainer{
+    font-size: 20px;
+}
+.download{
+    width: 47.7px;
+    height: 47.7px;
+}
+.myTable{
+   td.mat-cell {
+ /* row padding */
+  padding: 18px 0; 
+  }
+}
+.mySecondTable{
+    td.mat-cell {
+ border-bottom: 2px dotted black;
+}
+
+td.mat-cell:first-child {
+  border-right: 1px solid black;
+}
+.uploadIcon{
+    color: #3acba0;
+}
+
+table {
+  border-spacing: 0 8px !important;
+} 
+}
+.tableTextpadding{
+    padding-left: 15px
+}
+.servTableTxtlightGreyColor{
+    color: #afafaf;
+}
+.servTableTxtFontSize{
+    font-size: 10px;
+}
+// .tableColumnWidth{
+//     width: 15%;
+// }
+.buttonContainer{
+    border-radius: 34px !important;
+    background: #f1f1f1;
+    width: 127.7px;
+}
+.dialoBottomgBorder{
+    border-bottom: 1px solid black;
+}
+.btnDialogPosition{
+    position: absolute;
+    bottom: 12px;
+    right: 7px;
+}
+.dialogCardHeight{
+    height: 100%;
+}
+.btnBackground{
+    background: #f1f1f1;
+}
+.btnContainer{
+    .mat-raised-button:not([class*=mat-elevation-z]) {
+     box-shadow: red !important;
+}
+
 }
